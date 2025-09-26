@@ -1,6 +1,6 @@
 {
   "root": "D:\\Projects\\ru-content-bot",
-  "count": 1476,
+  "count": 1482,
   "files": [
     {
       "path": ".env.example",
@@ -9,8 +9,8 @@
     },
     {
       "path": ".git/COMMIT_EDITMSG",
-      "sha256": "96230c904ccce7f18d73115b4a8bde4705986ab4e101d945f1060021f47f554f",
-      "bytes": 48
+      "sha256": "ffacad1f5c75c68d95da69c29ae205ec6b3e50256d22e4a827365c883e22b963",
+      "bytes": 45
     },
     {
       "path": ".git/config",
@@ -24,7 +24,7 @@
     },
     {
       "path": ".git/FETCH_HEAD",
-      "sha256": "6ccded280090674a3cd9623661886be735e1bfa8820ff608336b7981809c956f",
+      "sha256": "d85821e2b3591fbe4af771eeaa46a78c9d3182c45b669e52cf30a98760c90516",
       "bytes": 111
     },
     {
@@ -104,8 +104,8 @@
     },
     {
       "path": ".git/index",
-      "sha256": "2484f84d3c6774a3af653ed028edc7a78f3a7de8c6c98e6747cec95af65b2f96",
-      "bytes": 2213
+      "sha256": "b2ca30e93d17d75d6a0ed6d9d95b0f9183a593d7dd7e260d32f3bbfef3cd5b40",
+      "bytes": 2365
     },
     {
       "path": ".git/info/exclude",
@@ -114,13 +114,13 @@
     },
     {
       "path": ".git/logs/HEAD",
-      "sha256": "4257b7f652b36e27794009d5781ceeb3372e87855a26e34fb18b6eb167dfca42",
-      "bytes": 228
+      "sha256": "9d9be21bc6bbfb52a499b7c28ef557eb18f27811c19fe1cad32a396af648a7a0",
+      "bytes": 421
     },
     {
       "path": ".git/logs/refs/heads/master",
-      "sha256": "4257b7f652b36e27794009d5781ceeb3372e87855a26e34fb18b6eb167dfca42",
-      "bytes": 228
+      "sha256": "9d9be21bc6bbfb52a499b7c28ef557eb18f27811c19fe1cad32a396af648a7a0",
+      "bytes": 421
     },
     {
       "path": ".git/logs/refs/remotes/origin/HEAD",
@@ -129,8 +129,13 @@
     },
     {
       "path": ".git/logs/refs/remotes/origin/master",
-      "sha256": "5157115925167a1ea02f39102551a3dcd308214f0d8308dde1ee2206c40a3e2f",
-      "bytes": 155
+      "sha256": "aaa1b6e5a44fea6e8bc71443bfd3021365d367c8d638c28ba2b2bb60adf5ee09",
+      "bytes": 310
+    },
+    {
+      "path": ".git/objects/12/a8fcd38230bbc0057d51e4b3de432b4e8c1bcc",
+      "sha256": "7938b835e446cbbeb6e72a70820c74632f9665cb1986dd78e42fe33b0cdecdbd",
+      "bytes": 318
     },
     {
       "path": ".git/objects/27/0cda62ee3bbc7cc27f025208c7fdcb09961d7b",
@@ -156,6 +161,11 @@
       "path": ".git/objects/67/2ba9f025513919cbbf67df12f64f68ce1a0f40",
       "sha256": "c4e5045342d826cba78137b75900801bab3f711965035f8796c9fdf4b37e85b1",
       "bytes": 54
+    },
+    {
+      "path": ".git/objects/95/9406a01552937bb09f9a6ae1f58e23650bbedb",
+      "sha256": "70da0dec9ef11add69595bce83b67e84f8df3aeedba8bcab0562bd980be1a136",
+      "bytes": 201
     },
     {
       "path": ".git/objects/98/99368eecfab5d35d979c124d76ce8287878e23",
@@ -193,13 +203,23 @@
       "bytes": 98
     },
     {
+      "path": ".git/objects/dc/f7258069d8911a837d0460dcf5297aab00f040",
+      "sha256": "0e85180d4f2d4534c6f4bb947d6c8441ce2684dc66adebed1c0ba4042df46e4a",
+      "bytes": 79228
+    },
+    {
+      "path": ".git/objects/de/7fee387b178b1167602e7a8510d59622ed015f",
+      "sha256": "0a5b3bd734d724e191285effe57afd0f6f190f2f3cd995b22833584502b9dd4b",
+      "bytes": 16796
+    },
+    {
       "path": ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "sha256": "164c5fa8067facf1a43f09ce3d0e35ebf53a7f5723ecbf15a8667cfc53c26f6c",
       "bytes": 15
     },
     {
       "path": ".git/refs/heads/master",
-      "sha256": "c60831e5b30d82367bb4ada878cb3fc3f4ab3d3c85fa9a5332ecb4f5bc7ad59e",
+      "sha256": "bb096780d6f64ba0aaba436e81a0ab81594cfff6f87640f72850476db44f7a75",
       "bytes": 41
     },
     {
@@ -209,7 +229,7 @@
     },
     {
       "path": ".git/refs/remotes/origin/master",
-      "sha256": "c60831e5b30d82367bb4ada878cb3fc3f4ab3d3c85fa9a5332ecb4f5bc7ad59e",
+      "sha256": "bb096780d6f64ba0aaba436e81a0ab81594cfff6f87640f72850476db44f7a75",
       "bytes": 41
     },
     {
@@ -7358,6 +7378,11 @@
       "bytes": 0
     },
     {
+      "path": "MANIFEST.json",
+      "sha256": "bd6bdd90bbab9373c6a321970b8b981d42be20d71f2796c8dd42bd819bc07d1d",
+      "bytes": 286346
+    },
+    {
       "path": "n8n/README.md",
       "sha256": "949b8870dd6c9c799ad3a83a7db03b8bbe1553a5a676bd85e591880729b6328a",
       "bytes": 99
@@ -7381,6 +7406,11 @@
       "path": "STATE.md",
       "sha256": "2fb627a7effec76bda0e1b96eda90df854c0a32e908a6d337dcc62e957e2b8d5",
       "bytes": 140
+    },
+    {
+      "path": "TREE.md",
+      "sha256": "ee577374f5080da2b9ed47f1d97ae5e64db883c495fcb22bd8c663ddedf03332",
+      "bytes": 101792
     }
   ]
 }
