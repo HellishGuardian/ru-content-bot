@@ -1,12 +1,7 @@
 {
   "root": "D:\\Projects\\ru-content-bot",
-  "count": 26,
+  "count": 28,
   "files": [
-    {
-      "path": ".env.example",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
-    },
     {
       "path": ".gitignore",
       "sha256": "eddd684841f4e0d23f7fd3fd6685a3a50e67650d8d7ef3374e7d03860ff60ab1",
@@ -19,8 +14,8 @@
     },
     {
       "path": "bot/handlers/analyze.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "5624ca59990ead37dccbfb36b6ca6e720497db5a1132ad0c8904c9b1b1cd4791",
+      "bytes": 1041
     },
     {
       "path": "bot/handlers/generate.py",
@@ -29,8 +24,8 @@
     },
     {
       "path": "bot/handlers/profile.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "1753dba26cbad28ca5292df4561166a45318e9ca0f22012593749c0e499c8ed5",
+      "bytes": 1066
     },
     {
       "path": "bot/handlers/publish.py",
@@ -39,18 +34,18 @@
     },
     {
       "path": "bot/handlers/start.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "18c5010448c613e70232aa1dfa24c4206657572e57effdc52a7a8dbc1fb19d71",
+      "bytes": 1583
     },
     {
       "path": "bot/keyboards/common.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "9998eec3fa0deaabf6eb2ce36ea53215a17a301db6076be70f1b19cb837c5277",
+      "bytes": 400
     },
     {
       "path": "bot/main.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "39f92d1a3063a7149f7684ccb2d9abf8c795ad0e62e0084b9e5f457cdadcbe64",
+      "bytes": 1283
     },
     {
       "path": "bot/services/abtest.py",
@@ -69,13 +64,13 @@
     },
     {
       "path": "bot/services/quotas.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "febc33e6503bbdde25d065b3bf2e5a11c53fa6765c9fa037dfa59cc7e7eb54fd",
+      "bytes": 620
     },
     {
       "path": "bot/services/storage.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "767ab4510e96ad0b77fe1db59b9a31bec5bff914dfdec78c57501f40f4b03230",
+      "bytes": 2488
     },
     {
       "path": "bot/services/watermark.py",
@@ -84,13 +79,18 @@
     },
     {
       "path": "bot/utils/config.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "95057e5ca9206a75c8ce5878075c3de8e72b29b7fe4322315ff4ae19fd33fb94",
+      "bytes": 878
     },
     {
       "path": "bot/utils/logging.py",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "sha256": "4b2a50ae237db750ee110b062f6a1bc9ce123e57fd82f8ad8ebdfa5f0108f356",
+      "bytes": 326
+    },
+    {
+      "path": "bot/utils/preflight.py",
+      "sha256": "91efcbd145c45e5bc77ad5f755ba766af89ef4af56c810b96018ff26d4128fd4",
+      "bytes": 555
     },
     {
       "path": "docker-compose.yml",
@@ -99,8 +99,8 @@
     },
     {
       "path": "MANIFEST.json",
-      "sha256": "294938ccbcb5d845c2db1a51301fd9889a09fcc0e7c6ce9acf206ee0a8875134",
-      "bytes": 287426
+      "sha256": "2520d23ef674f0599531dc9005d2d161565760b774f7ae62466509b098264cbf",
+      "bytes": 4145
     },
     {
       "path": "n8n/README.md",
@@ -114,8 +114,18 @@
     },
     {
       "path": "requirements.txt",
-      "sha256": "7bb6bf5a9aa73e46441731a1f3666037047376b4857d5624f47cd0fd21b3ca3d",
-      "bytes": 808
+      "sha256": "583087dc1a1bf03c711def35b4c89f52af0c3f7779c83b5e2ffd14d57d4005f4",
+      "bytes": 1384
+    },
+    {
+      "path": "scripts/fs_smoke.py",
+      "sha256": "7b43a0c8ae9a4ef50ae0480fae705245b51bf69dcbfa7882bf79db94c108f2d9",
+      "bytes": 1050
+    },
+    {
+      "path": "scripts/list_users.py",
+      "sha256": "6f446ae8391082f4f2f40a88f80c9cb0a3df3e3f56587b2a6cb5257f4f586feb",
+      "bytes": 697
     },
     {
       "path": "scripts/make_manifest.py",
@@ -129,8 +139,8 @@
     },
     {
       "path": "TREE.md",
-      "sha256": "64dcddd6183867937f74dd8a6d20bfae15790d84b80084771831e48f3911786c",
-      "bytes": 102122
+      "sha256": "6397fe0c0909a4c3429297979eeb7972ddb81e9f8f1ae030a5e3d549924f5daf",
+      "bytes": 843
     }
   ]
 }
