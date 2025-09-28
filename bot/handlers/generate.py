@@ -1,4 +1,3 @@
-# bot/handlers/generate.py
 from aiogram import Router, types, F
 from aiogram.filters import Command, CommandObject
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -8,6 +7,8 @@ from bot.services.abtest import (
 )
 from bot.services.publisher import publish_text
 from bot.utils.config import Config
+from bot.services.storage import ensure_user, missing_profile_fields
+from aiogram.filters.command import CommandObject, Command
 
 router = Router()
 
@@ -27,17 +28,18 @@ def kb_variant(ab_id: str, variant: str, selected: str | None) -> InlineKeyboard
 @router.message(Command("generate"))
 async def generate_cmd(msg: types.Message, command: CommandObject):
     topic = (command.args or "").strip()
-    if not topic:
-        await msg.answer(
-            "Использование:\n"
-            "<code>/generate тема/идея поста</code>\n\n"
-            "Напр.: <code>/generate распаковка набора кистей Ozon до 1500₽</code>"
-        )
+    if len(topic) < 10 or len(topic.split()) < 2:
+        await msg.answer("Нужно понятнее сформулировать тему. Пример: /generate «хук для продажи iPhone 16 (базовая версия)».")
         return
-    if not Config.N8N_WEBHOOK_BASE:
-        await msg.answer("ℹ️ Генерация сейчас работает в демо-режиме (шаблоны), так как N8N_WEBHOOK_BASE не задан в .env")
+
+    user = ensure_user(msg.from_user.id)
+    miss = missing_profile_fields(user)
+    if miss:
+        await msg.answer("Нужно настроить профиль перед генерацией. Нажми /start и пройди 1-минутный онбординг.")
+        return
 
     ab_id = create_ab_test(msg.from_user.id, topic)
+    await msg.answer("Готовлю варианты…")
     ab = get_ab_test(msg.from_user.id, ab_id)
     A = ab["variants"]["A"]["text"]
     B = ab["variants"]["B"]["text"]

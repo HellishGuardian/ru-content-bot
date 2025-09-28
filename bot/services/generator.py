@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import requests
 from bot.utils.config import Config
-
+from bot.utils.logging import logger
 
 def _template_variants(prompt: str, profile: dict | None):
     """Запасной вариант: простые шаблоны A/B."""
@@ -44,6 +44,11 @@ def generate_variants(prompt: str, profile: dict | None, *, force_template: bool
     base = (Config.N8N_WEBHOOK_BASE or "").rstrip("/")
     if base:
         try:
+            payload = {"prompt": prompt, "profile": profile or {}}
+            logger.info("N8N call %s/generate_text payload=%s", base, json.dumps(payload, ensure_ascii=False))
+            r = requests.post(f"{base}/generate_text", json=payload, timeout=40)
+            logger.info("N8N response %s: %s", r.status_code, r.text[:600])
+            
             r = requests.post(
                 f"{base}/generate_text",
                 json={"prompt": prompt, "profile": profile or {}},
